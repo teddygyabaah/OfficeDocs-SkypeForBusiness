@@ -47,7 +47,8 @@ Microsoft also offers all-in-the-cloud voice solutions, such as Microsoft Callin
 
 For more information about voice solutions, see [Plan your Teams voice solution](cloud-voice-landing-page.md).
 
-With Direct Routing, when users participate in a scheduled conference, the dial-in number is provided by the Microsoft Audio Conferencing service, which requires proper licensing. When dialing out, Audio Conferencing places the call using online calling capabilities, which requires proper licensing. If a user doesn't have a Microsoft Audio Conferencing license, the call routes through Direct Routing. For more information, see [Audio Conferencing requirements and considerations](#audio-conferencing-requirements-and-considerations).
+With Direct Routing, when users participate in a scheduled conference, the dial-in number is provided by the Microsoft Audio Conferencing service, which requires proper licensing. When dialing out, Audio Conferencing places the call using online calling capabilities, which requires proper licensing. If a user doesn't have a Microsoft Audio Conferencing license, the call routes through Direct Routing. For more information, see [Audio Conferencing requirements and considerations]
+(#audio-conferencing-requirements-and-considerations).
 
 Direct Routing also supports users who have another license for Microsoft Calling Plan. For more information, see [Direct Routing with Calling Plan and Operator Connect](#direct-routing-with-calling-plans-and-operator-connect). 
 
@@ -165,7 +166,7 @@ Alternatively, Direct Routing supports a wildcard in the CN and/or SAN, and the 
 
 An example would be using \*.contoso.com, which would match the SBC FQDN sbc.contoso.com, but wouldn't match with sbc.test.contoso.com.
 
-Direct Routing SIP interface will only trust certificates that are signed by Certificate Authorities (CAs) that are part of the Microsoft Trusted Root Certificate Program. Make sure that a CA that is part of the program signs your SBC certificate. Also make sure that the Extended Key Usage (EKU) extension of your certificate includes Server Authentication.
+Direct Routing SIP interface will only trust certificates that are signed by Certificate Authorities (CAs) that are part of the Microsoft Trusted Root Certificate Program. Make sure that a CA that is part of the program signs your SBC certificate. Also make sure that the Extended Key Usage (EKU) extension of your certificate includes Server Authentication and Client Authentication.
 
 For more information, see
 [Program Requirements - Microsoft Trusted Root Program](/security/trusted-root/program-requirements) and [Included CA Certificate List](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT).
